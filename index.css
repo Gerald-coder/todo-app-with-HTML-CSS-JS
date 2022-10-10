@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Tiro Devanagari Marathi", serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+#title {
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: darkcyan;
+  margin: 30px 0;
+}
+
+.to-do-container {
+  width: 400px;
+  padding: 20px;
+  box-shadow: inset 0px 20px 30px rgba(0, 0, 0, 0.116);
+}
+.app-head {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 10px;
+}
+
+.enter-list {
+  color: rgb(10, 6, 150);
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.add-list {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(10, 6, 150);
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.task {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.item {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(10, 6, 150);
+  border-radius: 30px;
+  box-shadow: inset 10px 30px 40px #ccc;
+  align-items: center;
+  margin: 10px;
+}
+.item p {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(10, 6, 150);
+  letter-spacing: 1px;
+}
+.item.completed p {
+  text-decoration: line-through;
+  color: black;
+}
+.item-btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.item-btn i {
+  color: sienna;
+  font-size: 20px;
+  cursor: pointer;
+}
